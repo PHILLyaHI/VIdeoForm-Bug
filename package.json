@@ -1,0 +1,48 @@
+{
+  "name": "graduatework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./Project/frontend/src/index.js --output-path ./Project/frontend/static/frontend",
+    "build": "webpack --mode production ./Project/frontend/src/index.js --output-path ./Project/frontend/static/frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PHILLyaHI/sprint-10-firstversion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PHILLyaHI/sprint-10-firstversion/issues"
+  },
+  "homepage": "https://github.com/PHILLyaHI/sprint-10-firstversion#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "axios": "^1.1.3",
+    "bootstrap": "^5.2.2",
+    "history": "^5.3.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^5.3.4",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-form": "^8.3.8",
+    "redux-thunk": "^2.4.1"
+  }
+}
