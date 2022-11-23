@@ -17,11 +17,11 @@ export class VideoForm extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    const { name, email, message } = this.state;
+    const { title, description } = this.state;
     const video = { title, description };
-    this.props.adVideo(video);
+    this.props.addVideo(video);
     this.setState({
-      name: '',
+      title: '',
       description: ''
     });
   };

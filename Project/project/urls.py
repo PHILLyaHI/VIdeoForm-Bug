@@ -20,10 +20,10 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('', include('frontend.urls')),
+    path("website/", include('frontend.urls')),
     path("", include('users.urls')),
     path('admin/', admin.site.urls),
-    path('website/', include("projectapp.urls")),
+    path('', include("projectapp.urls")),
     path("users/", include('django.contrib.auth.urls')),
     path("users/", include("users.urls")),
     path("chat/", include("chat.urls")),
