@@ -7,22 +7,27 @@ import Header from './layout/Header';
 import { HashRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Login from "./users/Login";
 import Register from "./users/Register";
-import PrivateRoute from "./common/PrivateRoute";
+import { loadUser } from '../actions/auth';
 
 class App extends Component {
+  componentDidMount() {
+    store.dispatch(loadUser());
+  }
+
   render() {
     return (
         <Provider store={store}>
-          <Fragment>
           <Router>
+          <Header />
+          <hr/>
             <Switch>
-              <PrivateRoute excat path="/" component={Dashboard} />
+            <React.StrictMode>
+              <Route excat path="/" component={Dashboard} />
               <Route excat path="/login" component={Login} />
               <Route excat path="/register" component={Register} />
+              </React.StrictMode>
             </Switch>
-            <Header />
           </Router>
-          </Fragment>
         </Provider>
     );
   }

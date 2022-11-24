@@ -1,7 +1,13 @@
-// actions/types.js
-
 export const GET_VIDEOS = 'GET_VIDEOS';
 export const GET_VIDEO = 'GET_VIDEO';
 export const ADD_VIDEO = 'ADD_VIDEO';
 export const DELETE_VIDEO = 'DELETE_VIDEO';
 export const EDIT_VIDEO = 'EDIT_VIDEO';
+export const USER_LOADING = 'USER_LOADING';
+export const USER_LOADED = 'USER_LOADED';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const GET_ERRORS = 'GET_ERRORS';
+export const CREATE_MESSAGE = 'CREATE_MESSAGE';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
